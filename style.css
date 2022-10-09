@@ -16,6 +16,7 @@ body {
   justify-content: center;
   align-content: center;
   flex-direction: column;
+  
 }
 @media screen and (min-width: 1400px) {
     .container {
