@@ -21,6 +21,7 @@ body {
     .container {
       margin: 0 auto;
       max-width: 1600px;
+      max-height: 1046px;
       padding: 0 120px;
     }
     .about {
@@ -97,6 +98,7 @@ body {
       margin: 0 auto;
       padding: 0 9.333vw;
       max-width: 170.667vw;
+      max-height: 633px;
     }
     .about {
       margin-top: 13.388vw;
@@ -151,6 +153,9 @@ body {
       position: relative;
       column-gap: 10.193vw;
     }
+    .about .bottom-image {
+        display: none;
+      }
     .about .bottom-image img:first-child {
       width: 17.916vw;
     }
@@ -180,3 +185,85 @@ body {
     }
 }
 
+@media screen and (min-width: 375px) and (max-width: 829px) {
+    .container {
+      padding: 0 4.8vw;
+      max-width: 83.333vw;
+      max-height: 776px;
+    }
+    .about {
+      margin-top: 10.008vw;
+      display: flex;
+      flex-direction: column;
+    }
+    .about .top-content {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2vw;
+    }
+    .about .top-content .about-content {
+      display: flex;
+      width: 100%;
+      margin-top: 2.667vw;
+      flex-direction: column;
+      /* align-items: center; */
+      row-gap: 2vw;
+    }
+    .about .top-content h1 {
+      font-family: "Roboto Slab";
+      font-weight: 700;
+      font-size: 5.467vw;
+      line-height: 101.38%;
+    }
+    .about .top-content .about-content p {
+      max-width: 64.129vw;
+      font-size: 2.6vw;
+      line-height: 150%;
+    }
+    .about .about-image {
+      display: flex;
+      flex-direction: column;
+      /* align-items: center; */
+      position: relative;
+    }
+    .about .about-image img:first-child {
+      display: block;
+      width: 19.509vw;
+    }
+  
+    .about .about-image img:last-child {
+      position: absolute;
+      display: block;
+      bottom: -1.6vw;
+      left: -15px;
+      z-index: -1;
+      width: 22.74vw;
+    }
+    .about .bottom-content {
+      display: flex;
+      margin-top: 6.095vw;
+      position: relative;
+    }
+    .about .bottom-image {
+      display: none;
+    }
+    .about .bottom-content .bottom-text {
+      display: flex;
+      align-items: center;
+      column-gap: 4.444vw;
+      width: 41.733vw;
+      flex-wrap: wrap;
+      row-gap: 1.333vw;
+    }
+    .about .bottom-content .bottom-text span {
+      font-weight: 700;
+      font-size: 2.6vw;
+      line-height: 130%;
+    }
+    .about .bottom-content .bottom-text p {
+      padding-top: 1.333vw;
+      max-width: 16.585vw;
+      font-size: 2vw;
+      line-height: 130%;
+    }
+}
